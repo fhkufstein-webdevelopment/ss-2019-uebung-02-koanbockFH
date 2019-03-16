@@ -1,7 +1,8 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "_variablen.scss";
-@import "_mixIns.scss";
+//Falls compass/css3 mixIns nicht importierbar sind obige auskommentieren und diese implementieren
+//@import "_mixIns.scss";
 @import "_extensions.scss";
 
 body {
