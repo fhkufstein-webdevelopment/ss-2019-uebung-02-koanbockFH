@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 3, ../sass/_base.scss */
 * {
   /* nachdem es bei ein paar von Ihnen Schwierigkeiten mit den Mixins beim import von "compass/css3" gegeben hat - Verzichte ich auf Mixins und schreibe diese mit Browserpräfixen aus */
-  -webit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -155,27 +155,64 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* inkludiert die Datei _button.scss */
-/* line 12, ../sass/main.scss */
+/* line 9, ../sass/main.scss */
+body .btn:first-child {
+  margin-top: 50px;
+}
+
+/* line 13, ../sass/main.scss */
 .btn {
   /* TODO */
+  -moz-transition-property: padding;
+  -o-transition-property: padding;
+  -webkit-transition-property: padding;
+  transition-property: padding;
+  -moz-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+  transition-delay: 0ms;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
-/* line 15, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 .btn.ease-in {
   /* TODO */
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
-/* line 19, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 .btn.ease-out {
   /* TODO */
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
-/* line 23, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .btn.ease-in-out {
   /* TODO */
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 27, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .btn.green {
   /* TODO */
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
-/* line 31, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .btn.animation {
   position: absolute;
   left: 0;
@@ -185,14 +222,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation-timing-function: linear;
 }
 
-/* line 41, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 body:hover .animation {
-  animation-name: myanimation2;
+  animation-name: myanimation;
   animation-duration: 5s;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 .btn:hover {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+@keyframes myanimation {
+  0% {
+    bottom: auto;
+    left: 0;
+    right: auto;
+    top: 0;
+  }
+  25% {
+    bottom: auto;
+    left: auto;
+    right: 0;
+    top: 0;
+  }
+  50% {
+    bottom: 0;
+    left: auto;
+    right: 0;
+    top: auto;
+  }
+  75% {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: auto;
+  }
+  100% {
+    bottom: auto;
+    left: 0;
+    right: auto;
+    top: 0;
+  }
 }
